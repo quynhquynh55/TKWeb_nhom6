@@ -1,4 +1,4 @@
-# TKWeb_nhom6
+#nhom6
 Lớp học phần: 241IS19A01 - [THIẾT KẾ WEB - THỨ 7 CA 2]
 
 Tên chủ đề: Thiết kế trang web bán trang sức
