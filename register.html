@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Đăng Nhập</title>
+    <title>Trang Đăng Ký</title>
     <!-- Liên kết Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Liên kết CSS Tùy chỉnh -->
     <link href="test.css" rel="stylesheet">
-    <link href="login.css" rel="stylesheet">
+    <link href="register.css" rel="stylesheet">
     <!-- Liên kết Icon Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
@@ -49,33 +49,36 @@
             </div>
         </div>
     </header>
-
-    <!-- Form Đăng Nhập -->
+    <!-- Form Đăng Ký -->
     <div class="login-container">
-        <h1>Đăng Nhập</h1>
+        <h1>Đăng Ký</h1>
         <form action="#" method="POST">
+            <!-- Họ và tên -->
+            <div class="mb-3">
+                <label for="username" class="form-label">Họ và tên:</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Nhập họ và tên" required>
+            </div>
             <!-- Email -->
             <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email của bạn" required>
+                <label for="registerEmail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="registerEmail" name="email" placeholder="Nhập email của bạn" required>
             </div>
             <!-- Mật khẩu -->
             <div class="mb-3">
-                <label for="password" class="form-label">Mật khẩu:</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                <label for="registerPassword" class="form-label">Mật khẩu:</label>
+                <input type="password" class="form-control" id="registerPassword" name="password" placeholder="Nhập mật khẩu" required>
             </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-3">
-                <input type="checkbox" class="form-check-input" id="rememberMe">
-                <label class="form-check-label" for="rememberMe">Ghi nhớ tài khoản</label>
+            <!-- Xác nhận mật khẩu -->
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Xác nhận mật khẩu" required>
             </div>
-            <!-- Nút Đăng Nhập -->
-            <button type="submit" class="btn btn-login w-100">Đăng Nhập</button>
+            <!-- Nút Đăng Ký -->
+            <button type="submit" class="btn btn-login w-100">Đăng Ký</button>
         </form>
         <!-- Liên kết chân trang -->
         <div class="form-footer">
-            <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
-            <p><a href="#">Quên mật khẩu?</a></p>
+            <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập ngay</a></p>
         </div>
     </div>
     <section class="features-section">
@@ -155,62 +158,64 @@
         }
       });
       </script>
-      <!-- Footer -->
-      <footer>
-          <div class="footer-container">
-              <div class="footer-section">
-                  <h4>Về Chúng Tôi</h4>
-                  <ul>
-                      <li><a href="/Vechungtoi/i.html">Về Linus</a></li>
-                      <li><a href="/Sodowebsite/k.html">Sơ đồ Website</a></li>
-                      <li><a href="/Cauhoithuonggap/f.html">Câu hỏi thường gặp </a></li>
-    </ul>
-              </div>
-              <div class="footer-section">
-                  <h4>Chính sách hỗ trợ </h4>
-                  <ul>
-                      <li><a href="/Chinhsachbaomat/b.html">Chính sách bảo mật </a></li>
-                      <li><a href="/Chinhsachvanchuyen/c.html">Chính sách vận chuyển </a></li>
-                      <li><a href="/Chinhsachdoitra/d.html">Chính sách đổi trả & bảo hành </a></li>
-                      <li><a href="/Cachthucbaoquan/e.html">Cách thức bảo quản </a></li>
-                  </ul>
-              </div>
-              <div class="footer-section">
-                  <h4>Liên Hệ</h4>
-                  <p>
-                      <a href="tel:+84123456789" class="contact-link">
-                          <i class="fas fa-phone-alt"></i> Số điện thoại: +84 123 456 789
-                      </a>
-                  </p>
-                  <p>
-                      <a href="mailto:info@example.com" class="contact-link">
-                          <i class="fas fa-envelope"></i> Email: Linusjewelrycskh@gmail.com
-                      </a>
-                  <p>
-                      <a href="https://www.google.com/maps/place/12+P.+Ch%C...Aw%3D%3D" target="_blank">
-                      <i class="fas fa-map-marker-alt icon"></i> Địa chỉ: 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội
-                  </a></p>
-              </div>
-              <div class="footer-section social-media">
-                  <h4>Kết Nối Với Chúng Tôi</h4>
-                  <p>
-                  <a href="https://www.facebook.com/people/Linusjewelry...3735143/" target="_blank" class="social-icon">
-                      <i class="fab fa-facebook-f"></i>Facebook
-                  </a> 
-                  </p>
-                  <p>
-                  <a href="https://www.instagram.com/linus_jewelry?igsh...Yw%3D%3D" target="_blank" class="social-icon">
-                      <i class="fab fa-instagram"></i>Instagram
-                  </a>
-                  </p>
-              </div>
-          </div>
-          <div class="footer-bottom">
-              <p>&copy; 2024 Trang Sức Cao Cấp Linus. All Rights Reserved.</p>
-          </div>
-      </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Về Chúng Tôi</h4>
+                <ul>
+                    <li><a href="/Vechungtoi/i.html">Về Linus</a></li>
+                    <li><a href="/Sodowebsite/k.html">Sơ đồ Website</a></li>
+                    <li><a href="/Cauhoithuonggap/f.html">Câu hỏi thường gặp </a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Chính sách hỗ trợ </h4>
+                <ul>
+                    <li><a href="/Chinhsachbaomat/b.html">Chính sách bảo mật </a></li>
+                    <li><a href="/Chinhsachvanchuyen/c.html">Chính sách vận chuyển </a></li>
+                    <li><a href="/Chinhsachdoitra/d.html">Chính sách đổi trả & bảo hành </a></li>
+                    <li><a href="/Cachthucbaoquan/e.html">Cách thức bảo quản </a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liên Hệ</h4>
+                <p>
+                    <a href="tel:+84123456789" class="contact-link">
+                        <i class="fas fa-phone-alt"></i> Số điện thoại: +84 123 456 789
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:info@example.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> Email: Linusjewelrycskh@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.google.com/maps/place/12+P.+Ch%C...Aw%3D%3D" target="_blank">
+                        <i class="fas fa-map-marker-alt icon"></i> Địa chỉ: 12 Chùa Bộc, Quang Trung, Đống Đa, Hà Nội
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section social-media">
+                <h4>Kết Nối Với Chúng Tôi</h4>
+                <p>
+                    <a href="https://www.facebook.com/people/Linusjewelry...3735143/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>Facebook
+                    </a> 
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/linus_jewelry?igsh...Yw%3D%3D" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>Instagram
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Trang Sức Cao Cấp Linus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <!-- Liên kết Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/login.js"></script>
 </body>
 </html>
